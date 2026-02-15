@@ -1,0 +1,215 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+     /* Adjust if header height changes */
+}
+
+/* Header (from home.css) */
+header {
+  background: #e5e7eb;
+  color: #111;
+  padding: 18px 32px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  animation: fadeInDown 0.5s;
+}
+
+header h1 {
+  font-family: 'Montserrat', 'Poppins', 'Segoe UI', Arial, sans-serif;
+  font-size: 2.2rem;
+  letter-spacing: 4px;
+  font-weight: 900;
+  margin: 0;
+  color: #111;
+  text-shadow: 1px 2px 8px rgba(0,0,0,0.08);
+}
+
+header nav {
+  display: flex;
+  gap: 12px;
+}
+
+header nav button {
+  background: #fff;
+  color: #111;
+  border: none;
+  padding: 12px 22px;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  transition: background 0.2s, color 0.2s, transform 0.2s, box-shadow 0.2s;
+}
+
+header nav button:hover,
+header nav button:focus {
+  background: #f3f4f6;
+  transform: translateY(-2px) scale(1.07);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+}
+
+/* Navigation Bar */
+.navigation {
+  background: #0f172a;
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  width: 100vw;
+  min-width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  position: relative;
+}
+
+.navigation ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 0;
+  margin: 0;
+}
+
+.navigation ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.navigation ul li a:hover {
+  background: #2563eb; 
+  color: white;
+}
+
+
+.hero {
+    background-image: url('/hotels.jpg'); 
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding-left: 5%;
+    color: white;
+}
+
+.hero-text h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    color: #fff;
+    font-weight: 900;
+    letter-spacing: 1.5px;
+    line-height: 1.2;
+    text-shadow: 3px 3px 15px rgba(0, 0, 0, 0.85), 0px 0px 5px rgba(0, 0, 0, 0.4);
+    animation: glowShadow 2.5s ease-in-out infinite alternate;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.btn {
+    background-color: red;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 160px;
+}
+
+/* Section Titles */
+.listed-section {
+    padding: 3rem 2rem;
+    background-color: #eaeaea;
+}
+
+.listed-section h2 {
+    margin-bottom: 1.5rem;
+}
+
+/* API Placeholder Boxes */
+.api-placeholder {
+    min-height: 200px;
+    background-color: white;
+    border: 2px dashed #ccc;
+    padding: 1rem;
+}
+
+/* Footer */
+footer {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 4rem;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.social-links {
+    margin-bottom: 1rem;
+}
+
+.social-links a {
+    display: inline-block;
+    margin: 0 1rem;
+    font-size: 1.5rem;
+    color: white;
+    transition: var(--transition);
+}
+
+.social-links a:hover {
+    color: var(--primary);
+    transform: translateY(-3px);
+}
+
+footer a {
+    color: var(--accent);
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+footer a:hover {
+    color: var(--primary);
+}
+
+@keyframes glowShadow {
+  from {
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
+  }
+  to {
+    text-shadow: 4px 4px 20px rgba(0, 0, 0, 0.9);
+  }
+}
+
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}

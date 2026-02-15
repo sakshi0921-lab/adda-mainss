@@ -1,0 +1,355 @@
+
+h2 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+label {
+  display: block;
+  text-align: left;
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 12px;
+  font-size: 14px;
+  margin-bottom: 20px;
+  border: none;
+  box-sizing: border-box;
+}
+
+.next-btn,
+.create-btn {
+  padding: 10px 20px;
+  background-color: #808080;
+  color: black;
+  font-weight: bold;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.create-btn {
+  width: 100%;
+  border: 1px solid black;
+  font-size: 18px;
+  border-radius: 0;
+  margin-top: 10px;
+  padding: 12px;
+}
+
+/* Hover Effects */
+.next-btn:hover,
+.create-btn:hover {
+  transform: scale(1.05);
+  background-color: #666;
+  color: white;
+}
+
+.help-link {
+  margin: 10px 0 30px 0;
+}
+
+.help-link a {
+  color: #00aaff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+hr {
+  border: 0.5px solid black;
+  margin: 20px 0;
+}
+
+.help-text {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.help-text a {
+  color: #00aaff;
+  text-decoration: none;
+}
+
+footer {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 4rem;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.social-links {
+    margin-bottom: 1rem;
+}
+
+.social-links a {
+    display: inline-block;
+    margin: 0 1rem;
+    font-size: 1.5rem;
+    color: white;
+    transition: var(--transition);
+}
+
+.social-links a:hover {
+    color: var(--primary);
+    transform: translateY(-3px);
+}
+
+footer a {
+    color: var(--accent);
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+footer a:hover {
+    color: var(--primary);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+body {
+  background: linear-gradient(135deg, #dbeafe, #e0f2fe);
+  
+}
+
+.container {
+  max-width: 440px;
+  width: 90%;
+  margin: 60px auto;
+  padding: 40px 32px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+  color: #1e3a8a;
+}
+
+.container h2 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 35px;
+  color: #1e3a8a;
+}
+
+label {
+  display: block;
+  text-align: left;
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 6px;
+  color: #251e8a;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 14px 16px;
+  font-size: 15px;
+  margin-bottom: 25px;
+  border: 1px solid rgba(30, 58, 138, 0.2);
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 10px;
+  outline: none;
+  transition: border 0.3s ease;
+}
+
+input[type="text"]:focus {
+  border-color: #6a25eb;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.next-btn,
+.create-btn {
+  padding: 14px 24px;
+  background: linear-gradient(135deg, #3b82f6, #2563eb);
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin: 12px 0;
+  width: 100%;
+  font-size: 16px;
+}
+
+.next-btn:hover,
+.create-btn:hover {
+  transform: scale(1.04);
+  background: linear-gradient(135deg, #1e40af, #2563eb);
+}
+
+.help-link {
+  margin: 14px 0;
+}
+
+.help-link a {
+  color: #eb2525;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+hr {
+  border: 0.5px solid rgba(0, 0, 0, 0.2);
+  margin: 30px 0;
+}
+
+.help-text {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #1e3a8a;
+  margin-bottom: 20px;
+}
+
+.help-text a {
+  color: #2563eb;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+
+.container {
+  max-width: 420px;
+  width: 90%;
+  margin: 70px auto;
+  padding: 40px 36px;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border-radius: 24px;
+  border: 1.5px solid rgba(255, 255, 255, 0.35);
+  box-shadow: 0 16px 38px rgba(0, 0, 0, 0.12);
+  color: #1e3a8a;
+  text-align: center;
+  font-family: 'Poppins', Arial, sans-serif;
+  transition: box-shadow 0.3s ease;
+}
+
+.container:hover {
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.18);
+}
+
+.container h2 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 40px;
+  color: #1e40af;
+  letter-spacing: 0.03em;
+}
+
+label {
+  display: block;
+  text-align: left;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #2c2c7c;
+  user-select: none;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 14px 18px;
+  font-size: 16px;
+  margin-bottom: 30px;
+  border: 1.8px solid rgba(30, 58, 138, 0.25);
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 14px;
+  outline: none;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+  box-shadow: inset 0 2px 6px rgba(0,0,0,0.05);
+}
+
+input[type="text"]:focus {
+  border-color: #4f46e5;
+  background-color: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 0 8px rgba(79, 70, 229, 0.6);
+}
+
+.next-btn,
+.create-btn {
+  padding: 14px 26px;
+  background: linear-gradient(135deg, #2563eb, #1e40af);
+  color: #fff;
+  font-weight: 700;
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+  transition: background 0.35s ease, transform 0.25s ease, box-shadow 0.25s ease;
+  margin: 16px 0;
+  width: 100%;
+  font-size: 17px;
+  letter-spacing: 0.02em;
+  box-shadow: 0 6px 12px rgba(30, 64, 175, 0.4);
+}
+
+.next-btn:hover,
+.create-btn:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #1e3a8a, #1e40af);
+  box-shadow: 0 8px 20px rgba(30, 64, 175, 0.6);
+}
+
+.help-link {
+  margin: 18px 0 38px 0;
+}
+
+.help-link a {
+  color: #db2777;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 15px;
+  transition: color 0.3s ease;
+}
+
+.help-link a:hover {
+  color: #9d174d;
+  text-decoration: underline;
+}
+
+hr {
+  border: 0.8px solid rgba(0, 0, 0, 0.15);
+  margin: 32px 0;
+}
+
+.help-text {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #1c3aa9;
+  margin-bottom: 28px;
+}
+
+.help-text a {
+  color: #2563eb;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.help-text a:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: 'Arial', sans-serif;
+}
+
+.container {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  background: #e5e7eb;
+  color: #111;
+  padding: 18px 32px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  animation: fadeInDown 0.5s;
+}
+
+header h1 {
+  font-family: 'Montserrat', 'Poppins', 'Segoe UI', Arial, sans-serif;
+  font-size: 2.2rem;
+  letter-spacing: 4px;
+  font-weight: 900;
+  margin: 0;
+  color: #111;
+  text-shadow: 1px 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+header nav {
+  display: flex;
+  gap: 12px;
+}
+
+header nav button {
+  background: #fff;
+  color: #111;
+  border: none;
+  padding: 12px 22px;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+  transition: background 0.2s, color 0.2s, transform 0.2s, box-shadow 0.2s;
+}
+
+header nav button:hover,
+header nav button:focus {
+  background: #f3f4f6;
+  transform: translateY(-2px) scale(1.07);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.10);
+}
+.navigation {
+  background: #0f172a;
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  width: 100vw;
+  min-width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  position: relative;
+}
+
+.navigation ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 0;
+  margin: 0;
+}
+
+.navigation ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.navigation ul li a:hover {
+  background: #2563eb; /* Blue on hover */
+  color: white;
+}
+
+.background {
+  position: fixed;      /* fix position to viewport */
+  top: 0;
+  left: 0;
+  width: 100vw;         /* full viewport width */
+  height: 100vh;        /* full viewport height */
+  object-fit: cover;    /* cover entire area without distortion */
+  z-index: -1;          /* behind other content */
+}
+
+h1 {
+  color: white;
+  font-size: 3em;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+.notify-btn {
+  padding: 12px 24px;
+  font-size: 1.2em;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
+}
+
+.notify-btn:hover {
+  background-color: darkred;
+}
+
+footer {
+  background: black;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+  margin-top: 4rem;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.social-links {
+  margin-bottom: 1rem;
+}
+
+.social-links a {
+  display: inline-block;
+  margin: 0 1rem;
+  font-size: 1.5rem;
+  color: white;
+  transition: var(--transition);
+}
+
+.social-links a:hover {
+  color: var(--primary);
+  transform: translateY(-3px);
+}
+
+footer a {
+  color: var(--accent);
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+footer a:hover {
+  color: var(--primary);
+}
+
+
+
+
+
+.container h1 {
+  font-size: 4em; 
+  font-weight: 900;
+  color: #acbb0d; 
+  text-shadow: 3px 3px 10px rgba(253, 228, 128, 0.7);
+  margin-bottom: 30px;
+  letter-spacing: 4px;
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+  animation: pulseGlow 2.5s infinite ease-in-out;
+}
+
+
+
+
+
+@keyframes pulseGlow {
+  0%, 100% {
+    text-shadow:
+      3px 3px 10px rgba(255, 204, 0, 0.7),
+      0 0 30px rgba(255, 204, 0, 0.5);
+  }
+  50% {
+    text-shadow:
+      4px 4px 20px rgba(255, 255, 50, 1),
+      0 0 40px rgba(255, 255, 50, 0.8);
+  }
+}
+
+
+
+.container .coming-soon,
+.container .notify-us {
+  background: rgba(15, 26, 45, 0.4);   
+  backdrop-filter: blur(10px);         
+  -webkit-backdrop-filter: blur(10px); 
+  border-radius: 12px;                  
+  border: 1px solid rgba(255, 255, 255, 0.2); 
+  color: #e1e8f0;                      
+  padding: 10px 18px;
+  margin: 0 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container .coming-soon:hover,
+.container .notify-us:hover {
+  background: rgba(15, 26, 45, 0.6);  /* Slightly stronger bg on hover */
+  box-shadow: 0 8px 32px 0 rgba(15, 26, 45, 0.5);
+}
+
+
+
+.glassmorphism-container {
+  margin: 2rem auto;
+  padding: 4rem 4rem ;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  text-align: center;
+  color: #0f2c8b; /* dark blue text */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  backdrop-filter:blur(8px)
+}
+
+
+
+.notify-btn:hover {
+  background: #0f2c8b;
+  color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+.coming-soon {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #2949a9; /* a nice medium blue from the theme */
+  font-style: normal;
+  text-shadow: 0.8px 0.8px 1px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Reduced shine animation */
+@keyframes subtleShine {
+  0% {
+    background-position: -200%;
+  }
+  100% {
+    background-position: 200%;
+  }
+}
+
+.coming-soon.shining {
+  background: linear-gradient(90deg, #2949a9 25%, #4a6fa5 50%, #2949a9 75%);
+  background-size: 200% 100%;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: subtleShine 10s linear infinite;
+}
+
+/* Notify Us Button: professional and elegant with travel theme colors */
+
+
+.notify-button {
+  padding: 12px 30px;
+  font-size: 1.8rem;
+  font-family: 'Montserrat', sans-serif;
+  background: linear-gradient(135deg, #fc5c7d, #fc5c7d); /* soft gradient */
+  color: #fff;
+  border: 2px solid transparent;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background 0.4s ease, border-color 0.4s ease, box-shadow 0.4s ease;
+  box-shadow: 0 8px 15px rgba(111, 89, 223, 0.3);
+  margin-top: 52px;
+  font-weight:800;
+  font-weight: 500;
+}
+
+.notify-button:hover {
+  background: linear-gradient(135deg, #fc5c7d, #6a82fb);
+  border-color: #fff;
+  box-shadow: 0 15px 20px rgba(252, 92, 125, 0.6);
+}

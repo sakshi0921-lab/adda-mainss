@@ -1,0 +1,762 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body {
+  width: 100%;
+  height: 100%;
+}
+header, footer, nav, main {
+  margin: 0;
+  padding: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+}
+body {
+  background: #fff8e6;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  width: 90%;
+  max-width: 800px;
+  margin: 20px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+header {
+  background: #e5e7eb;
+  color: #111;
+  padding: 18px 32px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  animation: fadeInDown 0.5s;
+}
+
+header h1 {
+  font-family: 'Montserrat', 'Poppins', 'Segoe UI', Arial, sans-serif;
+  font-size: 2.2rem;
+  letter-spacing: 4px;
+  font-weight: 900;
+  margin: 0;
+  color: #111;
+  text-shadow: 1px 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+header nav {
+  display: flex;
+  gap: 12px;
+}
+
+header nav button {
+  background: #fff;
+  color: #111;
+  border: none;
+  padding: 12px 22px;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+  transition: background 0.2s, color 0.2s, transform 0.2s, box-shadow 0.2s;
+}
+
+header nav button:hover,
+header nav button:focus {
+  background: #f3f4f6;
+  transform: translateY(-2px) scale(1.07);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.10);
+}
+
+.navigation {
+  background: #0f172a;
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  width: 100%;
+}
+
+
+.navigation ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 0;
+  margin: 0;
+}
+
+.navigation ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  margin:0px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.navigation ul li a:hover {
+  background: #2563eb; 
+  color: white;
+}
+
+h1 {
+  text-align: center;
+  color: #b22222;
+}
+
+h2 {
+  margin-top: 30px;
+  color: #333;
+}
+
+p, li {
+  line-height: 1.6;
+  font-size: 15px;
+}
+
+ol {
+  margin-left: 20px;
+  padding-left: 10px;
+}
+
+.date {
+  font-style: italic;
+}
+
+.signature {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.plan-button {
+  margin-top: 30px;
+  background-color: #e63946;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: bold;
+}
+
+.plan-button:hover {
+  background-color: #c62828;
+}
+footer {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 4rem;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.social-links {
+    margin-bottom: 1rem;
+}
+
+.social-links a {
+    display: inline-block;
+    margin: 0 1rem;
+    font-size: 1.5rem;
+    color: white;
+    transition: var(--transition);
+}
+
+.social-links a:hover {
+    color: var(--primary);
+    transform: translateY(-3px);
+}
+
+footer a {
+    color: var(--accent);
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+footer a:hover {
+    color: var(--primary);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Container */
+/* --- Container --- */
+.container {
+  max-width: 880px;
+  margin: 40px auto;
+  padding: 36px 28px;
+  background: #fffefc;
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+  transition: box-shadow 0.3s ease;
+}
+
+.container:hover {
+  box-shadow: 0 28px 48px rgba(0, 0, 0, 0.12);
+}
+
+/* --- Typography --- */
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  color: #d62828;
+  margin-bottom: 24px;
+  font-weight: 800;
+}
+
+h2 {
+  margin-top: 36px;
+  font-size: 1.3rem;
+  color: #222;
+  border-bottom: 2px solid #f0f0f0;
+  padding-bottom: 6px;
+}
+
+p, li {
+  line-height: 1.75;
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.date {
+  font-style: italic;
+  color: #555;
+}
+
+/* --- Ordered List --- */
+ol {
+  margin-left: 24px;
+  padding-left: 10px;
+}
+
+/* --- Signature Section --- */
+.signature {
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+  background: #f9fafb;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: inset 0 1px 3px rgba(0,0,0,0.05);
+}
+
+/* --- CTA Button --- */
+.plan-button {
+  margin: 50px auto 0;
+  display: block;
+  padding: 14px 32px;
+  background: linear-gradient(135deg, #ff5e57, #d62828);
+  color: #fff;
+  font-weight: bold;
+  font-size: 1rem;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: 0 6px 16px rgba(214, 40, 40, 0.4);
+  transition: all 0.3s ease;
+}
+
+.plan-button:hover {
+  background: linear-gradient(135deg, #d62828, #b91c1c);
+  transform: translateY(-2px) scale(1.04);
+  box-shadow: 0 8px 22px rgba(185, 28, 28, 0.5);
+}
+
+/* --- Footer --- */
+footer {
+  background: #0f172a;
+  color: #f3f4f6;
+  text-align: center;
+  padding: 3rem 1.5rem;
+  margin-top: 4rem;
+  box-shadow: 0 -6px 12px rgba(0, 0, 0, 0.2);
+  border-top: 2px solid #1e293b;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.social-links {
+  margin-bottom: 1rem;
+}
+
+.social-links a {
+  color: #cbd5e1;
+  font-size: 1.6rem;
+  margin: 0 14px;
+  transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #facc15;
+  transform: translateY(-4px) scale(1.15);
+}
+
+footer a {
+  color: #facc15;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+
+
+/* Apply smooth slide-in and fade-in on container */
+@keyframes slideFadeIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.container {
+  max-width: 880px;
+  margin: 50px auto 60px;
+  padding: 36px 40px;
+  background: #f0f4ff; /* very light pastel blue */
+  border-radius: 18px;
+  box-shadow:
+    0 4px 12px rgba(30, 60, 125, 0.12),
+    0 8px 24px rgba(18, 40, 90, 0.10);
+  animation: slideFadeIn 0.9s ease forwards;
+  color: #122243; /* dark navy text */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Headings */
+h1 {
+  text-align: center;
+  font-size: 2.4rem;
+  color: #1a3f8a; /* rich royal blue */
+  font-weight: 900;
+  margin-bottom: 30px;
+  letter-spacing: 0.08em;
+  text-shadow: 0 0 6px rgba(26, 63, 138, 0.3);
+  user-select: none;
+}
+
+h2 {
+  margin-top: 42px;
+  font-size: 1.45rem;
+  color: #1e4bb8; /* medium strong blue */
+  border-bottom: 2px solid #c3d0f0; /* subtle blue border */
+  padding-bottom: 8px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  user-select: none;
+}
+
+/* Paragraph and list */
+p, li {
+  font-size: 16px;
+  line-height: 1.85;
+  color: #1c2a59; /* dark blue-gray */
+  margin-bottom: 14px;
+}
+
+.date {
+  font-style: italic;
+  color: #627dbb; /* medium muted blue */
+}
+
+/* Ordered list indentation */
+ol {
+  margin-left: 28px;
+  padding-left: 12px;
+}
+
+/* Signature section */
+.signature {
+  margin-top: 50px;
+  display: flex;
+  gap: 38px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background: rgba(29, 53, 98, 0.06);
+  border-radius: 14px;
+  padding: 28px;
+  box-shadow: inset 0 1px 5px rgba(18, 40, 90, 0.06);
+  color: #234077;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+/* Ensuring signature paragraphs take equal space on large screens */
+.signature p {
+  flex: 1 1 45%;
+  min-width: 240px;
+  line-height: 1.4;
+}
+
+/* Call-to-action button with blue gradient */
+.plan-button {
+  margin: 55px auto 0;
+  display: block;
+  padding: 16px 38px;
+  background: linear-gradient(135deg, #3461ff, #1e3bb8);
+  color: #f0f6ff;
+  font-weight: 700;
+  font-size: 1.15rem;
+  border: none;
+  border-radius: 36px;
+  cursor: pointer;
+  box-shadow:
+    0 5px 18px rgba(52, 97, 255, 0.6),
+    inset 0 -2px 15px rgba(255, 255, 255, 0.15);
+  transition: all 0.35s cubic-bezier(.3,.7,.4,1);
+  user-select: none;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  filter: drop-shadow(0 0 6px rgba(52, 97, 255, 0.5));
+}
+
+.plan-button:hover,
+.plan-button:focus {
+  background: linear-gradient(135deg, #1e3bb8, #3461ff);
+  box-shadow:
+    0 7px 28px rgba(30, 59, 184, 0.9),
+    inset 0 -2px 18px rgba(255, 255, 255, 0.3);
+  transform: translateY(-3px) scale(1.06);
+  outline: none;
+}
+
+/* Responsive scaling adjustments */
+@media (max-width: 650px) {
+  .container {
+    padding: 28px 24px;
+  }
+  
+  h1 {
+    font-size: 1.9rem;
+  }
+  
+  h2 {
+    font-size: 1.25rem;
+  }
+  
+  .signature {
+    flex-direction: column;
+  }
+  
+  .signature p {
+    min-width: 100%;
+  }
+  
+  .plan-button {
+    width: 100%;
+    padding: 16px 0;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+/* Animated Gradient Background - applies to entire page */
+@keyframes animatedBackground {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+body {
+  background: linear-gradient(270deg, #0f172a, #1e3a8a, #3b82f6, #2563eb);
+  background-size: 800% 800%;
+  animation: animatedBackground 25s ease infinite;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #e0e7ff;
+  min-height: 100h;
+}
+
+/* Glowing floating shape behind container */
+.container-wrapper {
+  position: relative;
+  max-width: 900px;
+  margin: 50px auto 80px;
+  padding: 0 20px;
+  z-index: 1;
+}
+
+.container-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 380px;
+  height: 380px;
+  background: radial-gradient(circle at center, rgba(59,130,246,0.4), transparent 70%);
+  filter: blur(70px);
+  opacity: 0.7;
+  animation: floatGlow 6s ease-in-out infinite;
+  z-index: -1;
+  border-radius: 50%;
+}
+
+/* Slight horizontal slow float for glow */
+@keyframes floatGlow {
+  0%, 100% {
+    transform: translateX(-50%) translateY(0);
+    opacity: 0.65;
+  }
+  50% {
+    transform: translateX(-48%) translateY(8px);
+    opacity: 0.8;
+  }
+}
+
+/* Container styling with slideFadeIn from before */
+@keyframes slideFadeIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.container {
+  background: rgba(15, 23, 42, 0.82);
+  backdrop-filter: saturate(180%) blur(14px);
+  border-radius: 20px;
+  box-shadow:
+    0 8px 32px rgba(59, 130, 246, 0.35),
+    inset 0 0 60px rgba(37, 99, 235, 0.25);
+  padding: 40px 50px;
+  color: #cbd5f7;
+  animation: slideFadeIn 1s ease forwards;
+  position: relative;
+  z-index: 10;
+}
+
+/* Headings */
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #93c5fd;
+  font-weight: 900;
+  margin-bottom: 28px;
+  letter-spacing: 0.1em;
+  user-select: none;
+  text-shadow: 0 0 12px rgba(147, 197, 253, 0.75);
+}
+
+h2 {
+  margin-top: 44px;
+  font-size: 1.6rem;
+  color: #bfdbfe;
+  border-bottom: 2px solid #93c5fd;
+  padding-bottom: 10px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  user-select: none;
+}
+
+/* Paragraph and list */
+p, li {
+  font-size: 16px;
+  line-height: 1.85;
+  color: #bfdbfe;
+  margin-bottom: 14px;
+}
+
+.date {
+  font-style: italic;
+  color: #93c5fd;
+}
+
+/* Ordered list indentation */
+ol {
+  margin-left: 28px;
+  padding-left: 12px;
+}
+
+/* Signature section */
+.signature {
+  margin-top: 48px;
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background: rgba(59, 130, 246, 0.05);
+  border-radius: 16px;
+  padding: 32px;
+  box-shadow: inset 0 1px 9px rgba(99, 179, 252, 0.15);
+  color: #93c5fd;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.signature p {
+  flex: 1 1 45%;
+  min-width: 240px;
+  line-height: 1.45;
+}
+
+/* Call-to-action button with blue gradient */
+.plan-button {
+  margin: 60px auto 0;
+  display: block;
+  padding: 18px 42px;
+  background: linear-gradient(135deg, #3b82f6, #2563eb);
+  color: #eff6ff;
+  font-weight: 700;
+  font-size: 1.25rem;
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+  box-shadow:
+    0 6px 24px rgba(59, 130, 246, 0.85),
+    inset 0 -2px 18px rgba(202, 232, 255, 0.25);
+  transition: all 0.4s cubic-bezier(.3,.7,.4,1);
+  user-select: none;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  filter: drop-shadow(0 0 7px rgba(59, 130, 246, 0.6));
+  animation: pulse 3.6s ease-in-out infinite;
+}
+
+/* Pulse animation for button */
+@keyframes pulse {
+  0%, 100% {
+    box-shadow:
+      0 6px 24px rgba(59, 130, 246, 0.85),
+      inset 0 -2px 18px rgba(202, 232, 255, 0.25);
+    transform: scale(1);
+  }
+  50% {
+    box-shadow:
+      0 10px 36px rgba(59, 130, 246, 1),
+      inset 0 -2px 25px rgba(227, 241, 255, 0.35);
+    transform: scale(1.05);
+  }
+}
+
+.plan-button:hover,
+.plan-button:focus {
+  background: linear-gradient(135deg, #2563eb, #3b82f6);
+  box-shadow:
+    0 12px 48px rgba(37, 99, 235, 1),
+    inset 0 -3px 22px rgba(223, 237, 255, 0.4);
+  transform: translateY(-3px) scale(1.08);
+  outline: none;
+  animation-play-state: paused;
+}
+
+/* Responsive scaling */
+@media (max-width: 670px) {
+  .container {
+    padding: 28px 30px;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.3rem;
+  }
+  .signature {
+    flex-direction: column;
+  }
+  .signature p {
+    min-width: 100%;
+  }
+  .plan-button {
+    width: 100%;
+    padding: 18px 0;
+  }
+}
+
+
+
+/* Make "Property Listing Agreement" heading less flashy */
+.container > h1 {
+  color: #a3bffa; /* Softer blue */
+  text-shadow: none !important; /* Remove glow */
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  user-select: none;
+}
+
+/* Make "Select Your Listing Plan" button less flashy */
+/* Assuming the button uses .plan-button class */
+.plan-button {
+  background: linear-gradient(135deg, #2563eb, #3b82f6);
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.5);
+  filter: none; /* Remove drop-shadow */
+  animation: none !important; /* Disable pulse animation if any */
+  transition: all 0.3s ease;
+}
+
+.plan-button:hover,
+.plan-button:focus {
+  background: linear-gradient(135deg, #1e40af, #2563eb);
+  box-shadow: 0 8px 20px rgba(30, 59, 184, 0.7);
+  transform: translateY(-2px) scale(1.04);
+  outline: none;
+}
+
+
+
+

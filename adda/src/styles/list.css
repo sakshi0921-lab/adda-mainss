@@ -1,0 +1,416 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+.title {
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: bold;
+  display: block;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 6px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+  margin-bottom: 20px;
+}
+
+.row > div {
+  flex: 1;
+}
+
+.upload-section {
+  margin-bottom: 20px;
+}
+
+.upload-boxes {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.upload-box {
+  width: 200px;
+  height: 200px;
+  background-color: #a1a1a1;
+  color: white;
+  font-size: 80px;
+  text-align: center;
+  line-height: 200px;
+  border-radius: 4px;
+}
+
+.upload-btn {
+  margin-top: 10px;
+  background-color: #999;
+  color: white;
+  padding: 24px 32px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 22px;
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.checkboxes {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  font-size: 13px;
+}
+
+.checkboxes div {
+  flex: 1;
+}
+
+.submit-btn {
+  margin-top: 30px;
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 12px 16px;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 16px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Header */
+
+/* Footer */
+footer {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 4rem;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.social-links {
+    margin-bottom: 1rem;
+}
+
+.social-links a {
+    display: inline-block;
+    margin: 0 1rem;
+    font-size: 1.5rem;
+    color: white;
+    transition: var(--transition);
+}
+
+.social-links a:hover {
+    color: var(--primary);
+    transform: translateY(-3px);
+}
+
+footer a {
+    color: var(--accent);
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+footer a:hover {
+    color: var(--primary);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+:root {
+  --background: #0f172a;
+  --card: #1e293b;
+  --secondary: #0f172a;
+  --text: #000000;
+  --success: #10b981;
+  --input-bg: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #1c2845;
+  color: var(--text);
+}
+
+.container {
+  width: 92%;
+  max-width: 900px;
+  margin: 30px auto;
+  background: var(--card);
+  padding: 32px;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+}
+
+.title {
+  font-weight: 600;
+  margin-bottom: 25px;
+  font-size: 17px;
+  color: white;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: 600;
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-size: 15px;
+  color: white;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 1.4px solid #475569;
+  background: var(--input-bg);
+  color: var(--text);
+  font-size: 14px;
+}
+
+input[type="text"]:focus {
+  border-color: var(--secondary);
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.3);
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  color:white
+}
+
+.row > div {
+  flex: 1;
+  min-width: 200px;
+}
+
+.upload-section {
+  margin-bottom: 30px;
+}
+
+.upload-boxes {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.upload-box {
+  width: 140px;
+  height: 140px;
+  background: linear-gradient(to bottom right, var(--secondary), #1e40af);
+  color: white;
+  font-size: 48px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 140px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.upload-box:hover {
+  background: linear-gradient(to bottom right, #60a5fa, #1e3a8a);
+}
+
+.upload-btn {
+  margin-top: 16px;
+  background-color: var(--secondary);
+  color: white;
+  padding: 16px 28px;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 18px;
+  display: block;
+  width: 100%;
+  max-width: 440px;
+  margin-left: auto;
+  margin-right: auto;
+  transition: background 0.3s;
+}
+
+.upload-btn:hover {
+  background-color: #1e40af;
+}
+
+.checkboxes {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  font-size: 14px;
+  margin-top: 10px;
+  line-height: 1.8;
+  flex-wrap: wrap;
+
+}
+
+.checkboxes div {
+  flex: 1;
+  min-width: 220px;
+}
+
+.checkboxes label {
+  display: block;
+  font-weight: 500;
+  color: white;
+  cursor: pointer;
+}
+
+.submit-btn {
+  margin-top: 40px;
+  background-color: var(--primary);
+  color: var(--card);
+  border: none;
+  padding: 14px 20px;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 18px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.submit-btn:hover {
+  background-color: #d97706;
+  color: white;
+}
+
+/* Navigation */
+.navigation {
+  background: #0f172a;
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.4);
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  position: relative;
+}
+
+.navigation ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 0;
+  margin: 0;
+}
+
+.navigation ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.navigation ul li a:hover {
+  background: #0f172a;
+  color: black;
+}
+
+/* Footer */
+footer {
+  background: black;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+  margin-top: 4rem;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.social-links {
+  margin-bottom: 1rem;
+}
+
+.social-links a {
+  display: inline-block;
+  margin: 0 1rem;
+  font-size: 1.5rem;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+  color: var(--secondary);
+  transform: translateY(-3px);
+}

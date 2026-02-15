@@ -1,0 +1,140 @@
+
+
+.container {
+  padding: 40px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  max-width: 1000px;
+  margin: auto;
+  justify-content: space-between;
+}
+
+.box {
+  background: #f9fafb;
+  padding: 50px;
+  border-radius: 12px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2); /* deeper black shadow */
+  width: 48%;
+  box-sizing: border-box;
+  transition: transform 0.3s ease;
+}
+.box:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+}
+
+.box h2 {
+  font-size: 1.6rem;
+  margin-bottom: 12px;
+  color: #111827;
+}
+
+.box ul, .box ol {
+  margin-left: 20px;
+  color: #374151;
+}
+
+.cta-button {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.cta-button button {
+  padding: 14px 28px;
+  font-size: 1rem;
+  background: #ef4444;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.cta-button button:hover {
+  background: #dc2626;
+}
+
+footer {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 4rem;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.social-links {
+    margin-bottom: 1rem;
+}
+
+.social-links a {
+    display: inline-block;
+    margin: 0 1rem;
+    font-size: 1.5rem;
+    color: white;
+    transition: var(--transition);
+}
+
+.social-links a:hover {
+    color: var(--primary);
+    transform: translateY(-3px);
+}
+
+footer a {
+    color: var(--accent);
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+footer a:hover {
+    color: var(--primary);
+}
+
+.hero {
+    background-image: linear-gradient(rgba(0,0,0,0.45),rgba(0,0,0,0.45)), url('/background.png');
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding-left: 5%;
+    color: white;
+}
+
+.hero-text h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    color: #fff;
+    font-weight: 900;
+    letter-spacing: 1.5px;
+    line-height: 1.2;
+    text-shadow: 3px 3px 15px rgba(0, 0, 0, 0.85), 0px 0px 5px rgba(0, 0, 0, 0.4);
+    animation: glowShadow 2.5s ease-in-out infinite alternate;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.btn {
+    background-color: red;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 160px;
+}
+
+
+
+
+
+
+
+
+
+
