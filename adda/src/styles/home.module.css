@@ -1,4 +1,4 @@
-:root {
+:global(:root) {
   --primary: #2563eb;
   --secondary: #0f172a;
   --accent: #3b82f6;
@@ -7,7 +7,7 @@
   --transition: all 0.3s ease;
 }
 
-body {
+:global(body) {
   font-family: 'Segoe UI', system-ui, sans-serif;
   margin: 0;
   padding: 0;
@@ -381,7 +381,7 @@ body {
 }
 
 
-:root {
+:global(:root) {
   --primary: #2563eb;
   --secondary: #0f172a;
   --accent: #3b82f6;
@@ -456,7 +456,7 @@ body {
   padding: 2rem;
   border-radius: 1rem;
   font-size:x-large;
-  max-width: 700px;
+  max-width: 600px;
 }
 
 /* Search Bar */
@@ -694,14 +694,4 @@ body {
   .dealContent h3 {
     font-size: 1.1rem;
   }
-}
-
-.hero h1 {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.overlay {
-  max-width: 700px;
 }
