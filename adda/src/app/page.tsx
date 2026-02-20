@@ -31,11 +31,11 @@ export default function HomePage() {
 
       <nav className={styles.navigation}>
         <ul>
-          <li><Link href="/accomodation"><i className="fas fa-hotel"></i> Accommodations</Link></li>
-          <li><a href="/coming"><i className="fas fa-plane"></i> Flights</a></li>
-          <li><a href="/pricing"><i className="fas fa-box"></i> Packages</a></li>
-          <li><a href="/list-property"><i className="fas fa-building"></i> Transfer</a></li>
-          <li><a href="/propertylisting"><i className="fas fa-list"></i> List Your Property</a></li>
+          <li><a href="#"><i className="fas fa-hotel"></i> Accommodations</a></li>
+          <li><a href="#"><i className="fas fa-plane"></i> Flights</a></li>
+          <li><a href="#"><i className="fas fa-box"></i> Packages</a></li>
+          <li><a href="#"><i className="fas fa-building"></i> Transfer</a></li>
+          <li><a href="#"><i className="fas fa-list"></i> List Your Property</a></li>
         </ul>
       </nav>
 
