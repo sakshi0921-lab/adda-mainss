@@ -1,4 +1,4 @@
-body, html {
+:global(body), :global(html) {
   margin: 0;
   padding: 0;
   height: 100%;
@@ -78,6 +78,7 @@ body, html {
   text-decoration: underline;
 }
 
+/* Submit Button */
 .submit-btn {
   width: 100%;
   padding: 12px 0;
@@ -160,6 +161,7 @@ body, html {
   transform: scale(1.05);
 }
 
+/* Divider */
 .divider {
   display: flex;
   align-items: center;
@@ -178,6 +180,7 @@ body, html {
   margin: 0 10px;
 }
 
+/* Signup Link */
 .signup-link {
   margin-top: 15px;
   font-size: 14px;
