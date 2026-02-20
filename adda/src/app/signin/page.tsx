@@ -1,6 +1,6 @@
 // app/signin/page.tsx 
 "use client";
-
+import {redirect} from "next/navigation";
 import React from "react";
 import Link from "next/link";
 import Head from "next/head";
@@ -94,4 +94,7 @@ const SignIn = () => {
   );
 };
 
-export default SignIn;
+export default function SignInPage() {
+  redirect("/login");
+}
+
